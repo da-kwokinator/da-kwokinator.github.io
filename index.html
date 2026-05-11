@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CourseSync — Compare courses with your community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=course-sync-current" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="CourseSync home">
+          <span class="logo-mark" aria-hidden="true">◈</span>
+          CourseSync
+        </a>
+        <nav class="nav-actions" aria-label="Account">
+          <button type="button" class="btn btn-ghost" id="open-login">Log in</button>
+          <button type="button" class="btn btn-primary" id="open-signup">Sign up</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero hero-visual">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Emerald High & Fallon Middle</p>
+            <h1>Plan courses and schedules with friends you trust</h1>
+            <p class="lede">
+              CourseSync brings schedules, course ratings, community threads, recommendations,
+              notifications, and future planning into one workspace built around your actual school.
+            </p>
+            <div class="hero-ctas">
+              <button type="button" class="btn btn-primary btn-lg" id="hero-signup">Sign up</button>
+              <button type="button" class="btn btn-outline btn-lg" id="hero-login">Log in</button>
+            </div>
+          </div>
+          <div class="hero-collage" aria-hidden="true">
+            <img
+              class="hero-img hero-img-main"
+              src="assets/course-planning.svg"
+              width="520"
+              height="360"
+              alt="Course planning desk with schedules and student profile cards"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="how">
+        <div class="container">
+          <h2 class="section-title">How CourseSync works</h2>
+          <p class="section-intro narrow">
+            One place for your current classes, activities, future picks, and profile—built for students
+            at Emerald High School and Fallon Middle School.
+          </p>
+          <ol class="steps steps-three">
+            <li class="step">
+              <span class="step-num">1</span>
+              <h3>Build your real schedule</h3>
+              <p>
+                Add courses with teachers, rooms, ratings, comments, reactions, and activities.
+                Bell times and course lists stay tied to your community.
+              </p>
+            </li>
+            <li class="step">
+              <span class="step-num">2</span>
+              <h3>Map what is next</h3>
+              <p>
+                Build primary and backup course lists with grade-aware AP, Honors, CP, and elective options.
+              </p>
+            </li>
+            <li class="step">
+              <span class="step-num">3</span>
+              <h3>Compare with your people</h3>
+              <p>
+                Use Trending, threads, messages, classmate profiles, and recommendations to make choices with context.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="benefits">
+        <div class="container">
+          <h2 class="section-title">Benefits</h2>
+          <div class="benefit-grid">
+            <article class="benefit">
+              <h3>Know What Is Popular</h3>
+              <p>Trending highlights courses and people with real ratings, comments, future picks, and community activity.</p>
+            </article>
+            <article class="benefit">
+              <h3>Stay In Your Community</h3>
+              <p>Emerald and Fallon stay separate unless you intentionally add another community from the dashboard.</p>
+            </article>
+            <article class="benefit">
+              <h3>Plan With Support</h3>
+              <p>Friends can react, comment, recommend courses, and help you compare what fits your goals.</p>
+            </article>
+          </div>
+          <p class="positive-note landing-note" role="note">
+            <strong>Small choices add up.</strong> Keep planning one class, one conversation, and one useful question at a time.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-tight schools-served" id="schools">
+        <div class="container">
+          <h2 class="section-title">Schools CourseSync Serves</h2>
+          <div class="steps steps-three">
+            <article class="step">
+              <h3>Emerald High School</h3>
+              <p>
+                CourseSync supports 9-12 planning with current classes, course ratings, future course
+                recommendations, career pathway context, finals reminders, and shared class discovery.
+              </p>
+            </article>
+            <article class="step">
+              <h3>Fallon Middle School</h3>
+              <p>
+                Fallon students can organize regular and Wednesday bell schedules, sports and activities,
+                exploratory interests, friends, discussion posts, and the transition into high school.
+              </p>
+            </article>
+            <article class="step">
+              <h3>Inside The Website</h3>
+              <p>
+                The dashboard now includes a planner snapshot, discussion board, invite system, profile
+                privacy controls, community directory, course comments, and recommendation tools.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p><strong>CourseSync</strong> — course planning for Emerald High School & Fallon Middle School.</p>
+        <p class="fineprint">Student planning workspace for Emerald High School and Fallon Middle School.</p>
+      </div>
+    </footer>
+
+    <!-- Sign up modal -->
+    <div class="modal-overlay" id="signup-modal" hidden role="dialog" aria-modal="true" aria-labelledby="signup-title">
+      <div class="modal">
+        <button type="button" class="modal-close" data-close-modal aria-label="Close sign up">×</button>
+        <h2 id="signup-title" class="modal-title">Sign up</h2>
+        <p class="modal-sub">Step <span id="signup-step-indicator">1</span> of 3</p>
+
+        <form id="signup-form" novalidate>
+          <div class="form-step" data-signup-step="1">
+            <label class="field">
+              <span>Email</span>
+              <input type="text" name="email" autocomplete="email" required placeholder="you@student.org" />
+            </label>
+            <label class="field">
+              <span>Password</span>
+              <input type="password" name="password" autocomplete="new-password" required minlength="8" placeholder="At least 8 characters" />
+            </label>
+          </div>
+
+          <div class="form-step" data-signup-step="2" hidden>
+            <label class="field">
+              <span>Full name</span>
+              <input type="text" name="name" autocomplete="name" required placeholder="Alex Rivera" />
+            </label>
+            <label class="field">
+              <span>School</span>
+              <select name="school" id="signup-school" required>
+                <option value="">Select your school</option>
+                <option value="Emerald High School">Emerald High School</option>
+                <option value="Fallon Middle School">Fallon Middle School</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Mobile phone</span>
+              <input type="tel" name="phone" autocomplete="tel" required placeholder="(925) 555-0100" />
+            </label>
+            <fieldset class="field checkbox-field">
+              <legend>Discovery</legend>
+              <label class="checkbox">
+                <input type="checkbox" name="nearby" />
+                <span>Allow friends nearby to find me by approved email or invite code only</span>
+              </label>
+            </fieldset>
+          </div>
+
+          <div class="form-step" data-signup-step="3" hidden>
+            <p class="success-copy">
+              Review your details. Finish to open your dashboard.
+            </p>
+            <dl class="review" id="signup-review"></dl>
+          </div>
+
+          <p class="form-error" id="signup-error" role="alert" hidden></p>
+
+          <div class="modal-actions">
+            <button type="button" class="btn btn-ghost" id="signup-back" hidden>Back</button>
+            <button type="button" class="btn btn-primary" id="signup-next">Continue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Log in modal -->
+    <div class="modal-overlay" id="login-modal" hidden role="dialog" aria-modal="true" aria-labelledby="login-title">
+      <div class="modal">
+        <button type="button" class="modal-close" data-close-modal aria-label="Close log in">×</button>
+        <h2 id="login-title" class="modal-title">Log in</h2>
+        <p class="modal-sub">Step <span id="login-step-indicator">1</span> of 2</p>
+
+        <form id="login-form" novalidate>
+          <div class="form-step" data-login-step="1">
+            <label class="field">
+              <span>Email</span>
+              <input type="text" name="email" autocomplete="username" required placeholder="you@student.org" />
+            </label>
+            <label class="field">
+              <span>Password</span>
+              <input type="password" name="password" autocomplete="current-password" required placeholder="Your password" />
+            </label>
+            <p class="hint">Use your account email and a password with 8+ characters.</p>
+          </div>
+
+          <div class="form-step" data-login-step="2" hidden>
+            <p class="success-copy">
+              Verify it is you with your 6-digit code.
+            </p>
+            <label class="field">
+              <span>6-digit code</span>
+              <input type="text" name="code" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="000000" aria-describedby="code-hint" />
+            </label>
+            <p id="code-hint" class="hint">Enter your 6-digit verification code.</p>
+          </div>
+
+          <p class="form-error" id="login-error" role="alert" hidden></p>
+
+          <div class="modal-actions">
+            <button type="button" class="btn btn-ghost" id="login-back" hidden>Back</button>
+            <button type="button" class="btn btn-primary" id="login-next">Continue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="app.js?v=course-sync-current"></script>
+  </body>
+</html>
