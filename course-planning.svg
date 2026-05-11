@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">Students planning courses</title>
+  <desc id="desc">A course planning desk with schedules, notes, and student profile cards.</desc>
+  <rect width="900" height="560" fill="#f6f3ee"/>
+  <rect x="74" y="78" width="752" height="404" rx="28" fill="#ffffff" stroke="#cfc7ba" stroke-width="4"/>
+  <rect x="118" y="124" width="320" height="260" rx="18" fill="#d8f3dc"/>
+  <rect x="146" y="158" width="210" height="24" rx="12" fill="#2d6a4f"/>
+  <rect x="146" y="210" width="248" height="18" rx="9" fill="#ffffff"/>
+  <rect x="146" y="250" width="228" height="18" rx="9" fill="#ffffff"/>
+  <rect x="146" y="290" width="178" height="18" rx="9" fill="#ffffff"/>
+  <circle cx="380" cy="350" r="34" fill="#f6d365"/>
+  <rect x="492" y="126" width="258" height="70" rx="16" fill="#1d3557"/>
+  <rect x="522" y="152" width="176" height="18" rx="9" fill="#ffffff"/>
+  <rect x="492" y="226" width="258" height="70" rx="16" fill="#f6d365"/>
+  <rect x="522" y="252" width="148" height="18" rx="9" fill="#2d2411"/>
+  <rect x="492" y="326" width="258" height="70" rx="16" fill="#2d6a4f"/>
+  <rect x="522" y="352" width="190" height="18" rx="9" fill="#ffffff"/>
+  <path d="M174 436h560" stroke="#cfc7ba" stroke-width="10" stroke-linecap="round"/>
+  <path d="M230 436c38-42 90-42 128 0" stroke="#2d6a4f" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <path d="M542 436c38-42 90-42 128 0" stroke="#1d3557" stroke-width="12" stroke-linecap="round" fill="none"/>
+</svg>
