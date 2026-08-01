@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CourseSync — Compare courses with your community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=course-sync-current" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo" aria-label="CourseSync home">
+          <span class="logo-mark" aria-hidden="true">◈</span>
+          CourseSync
+        </a>
+        <button type="button" class="site-nav-toggle btn btn-ghost" id="site-nav-toggle" aria-expanded="false" aria-controls="site-nav">
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Overview sections">
+          <a class="site-nav-link" href="#top">Home</a>
+          <a class="site-nav-link" href="#how">How it works</a>
+          <a class="site-nav-link" href="#features">Features</a>
+          <a class="site-nav-link" href="#benefits">Benefits</a>
+          <a class="site-nav-link" href="#goals">Goals</a>
+          <a class="site-nav-link" href="#schools">Communities</a>
+        </nav>
+        <nav class="nav-actions" aria-label="Account">
+          <button type="button" class="btn btn-ghost" id="open-login">Log in</button>
+          <button type="button" class="btn btn-primary" id="open-signup">Sign up</button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero hero-visual overview-hero" id="top">
+        <div class="overview-hero-bg" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Emerald High & Fallon Middle · Dublin, CA</p>
+            <h1>Plan courses and schedules with friends you trust</h1>
+            <p class="lede">
+              CourseSync is a student-built planning workspace for your real bell schedule, course catalog,
+              classmate directory, and next-term choices—not a generic planner template.
+            </p>
+            <p class="lede lede-secondary">
+              See who is in a class, what peers rated and commented, which courses are trending, how your plan lines up
+              with graduation requirements, and what your community is discussing—all tied to Emerald or Fallon.
+            </p>
+            <ul class="trust-row">
+              <li>Verified school directory</li>
+              <li>AP, Honors, CP & electives</li>
+              <li>Friends, messages & board posts</li>
+            </ul>
+            <div class="overview-stat-row" aria-label="What you can do in CourseSync">
+              <div class="overview-stat">
+                <strong>Schedule</strong>
+                <span>Periods, teachers, ratings</span>
+              </div>
+              <div class="overview-stat">
+                <strong>Grad track</strong>
+                <span>DUSD & A-G progress</span>
+              </div>
+              <div class="overview-stat">
+                <strong>Community</strong>
+                <span>Directory & networking</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-collage" aria-hidden="true">
+            <img
+              class="hero-img hero-img-main"
+              src="assets/course-planning.svg"
+              width="520"
+              height="360"
+              alt="Course planning desk with schedules and student profile cards"
+              loading="eager"
+            />
+            <div class="hero-img-stack">
+              <img src="assets/trend-course.svg" width="160" height="120" alt="" loading="lazy" />
+              <img src="assets/trend-person.svg" width="160" height="120" alt="" loading="lazy" />
+              <img src="assets/trend-discussion.svg" width="160" height="120" alt="" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="how">
+        <div class="container">
+          <h2 class="section-title">How CourseSync works</h2>
+          <p class="section-intro narrow">
+            Start with your school community, build an accurate schedule, then use catalog tools, graduation tracking,
+            and social features so every choice has context from classmates—not guesswork.
+          </p>
+          <ol class="steps steps-three">
+            <li class="step">
+              <span class="step-num">1</span>
+              <img class="step-img" src="assets/course-planning.svg" alt="" loading="lazy" />
+              <h3>Join your school & publish your profile</h3>
+              <p>
+                Sign up for Emerald or Fallon, save your profile to the verified directory, and set privacy for what
+                classmates can see on schedules, activities, and future plans.
+              </p>
+            </li>
+            <li class="step">
+              <span class="step-num">2</span>
+              <img class="step-img" src="assets/trend-course.svg" alt="" loading="lazy" />
+              <h3>Plan classes, credits & what is next</h3>
+              <p>
+                Build your current schedule with bell times and teachers, track grad requirements (high school),
+                search the course catalog, and save primary and backup future lists by grade.
+              </p>
+            </li>
+            <li class="step">
+              <span class="step-num">3</span>
+              <img class="step-img" src="assets/trend-discussion.svg" alt="" loading="lazy" />
+              <h3>Learn from your community</h3>
+              <p>
+                Browse Trending, read peer ratings and comments, find classmates in the same period, post on the
+                networking board, message friends, and send course recommendations.
+              </p>
+            </li>
+          </ol>
+          <div class="usage-demo" aria-label="CourseSync usage demonstration">
+            <div class="usage-demo-panel usage-demo-schedule">
+              <span>1</span>
+              <strong>Build Schedule</strong>
+              <p>Add classes, teacher, room, and comments.</p>
+            </div>
+            <div class="usage-demo-panel usage-demo-catalog">
+              <span>2</span>
+              <strong>Compare Courses</strong>
+              <p>Search catalog depth, AP exams, rigor, and peers.</p>
+            </div>
+            <div class="usage-demo-panel usage-demo-community">
+              <span>3</span>
+              <strong>Share Context</strong>
+              <p>Use friends, messages, requests, and class news.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight section-alt" id="features">
+        <div class="container">
+          <h2 class="section-title">Main features</h2>
+          <p class="section-intro narrow">
+            The dashboard brings planning and people together—each panel maps to a real part of your school year.
+          </p>
+          <div class="overview-feature-grid">
+            <article class="overview-feature">
+              <img src="assets/trend-course.svg" alt="" width="48" height="48" loading="lazy" />
+              <h3>Current schedule</h3>
+              <p>Monday–Friday rows with periods, rooms, teachers, ratings, comments, and reactions tied to your community bell schedule.</p>
+            </article>
+            <article class="overview-feature">
+              <img src="assets/trend-course.svg" alt="" width="48" height="48" loading="lazy" />
+              <h3>Grad requirements</h3>
+              <p>High school students see DUSD credit progress and UC/CSU A-G categories as courses are added—so you know what you still need.</p>
+            </article>
+            <article class="overview-feature">
+              <img src="assets/trend-course.svg" alt="" width="48" height="48" loading="lazy" />
+              <h3>Future courses & catalog</h3>
+              <p>Primary and backup lists by grade, course browser with filters, and enrollment signals from published classmate schedules.</p>
+            </article>
+            <article class="overview-feature">
+              <img src="assets/trend-person.svg" alt="" width="48" height="48" loading="lazy" />
+              <h3>Community directory</h3>
+              <p>Find verified students at your school, filter by grade or pathway, and open full profiles with mutual courses.</p>
+            </article>
+            <article class="overview-feature">
+              <img src="assets/trend-discussion.svg" alt="" width="48" height="48" loading="lazy" />
+              <h3>Networking board</h3>
+              <p>Public or friends-only posts for coursework, study groups, and questions—with replies and reactions on each thread.</p>
+            </article>
+            <article class="overview-feature">
+              <img src="assets/trend-person.svg" alt="" width="48" height="48" loading="lazy" />
+              <h3>Friends & messages</h3>
+              <p>Send requests, accept classmates, message friends, and see community activity from people in your school.</p>
+            </article>
+            <article class="overview-feature">
+              <img src="assets/course-planning.svg" alt="" width="48" height="48" loading="lazy" />
+              <h3>Classes & matching</h3>
+              <p>See who shares your period, teacher, and subject—and compare schedules without digging through group chats.</p>
+            </article>
+            <article class="overview-feature">
+              <img src="assets/trend-course.svg" alt="" width="48" height="48" loading="lazy" />
+              <h3>Trending & course info</h3>
+              <p>Discover hot courses, people, and board threads with clear reasons—recent comments, enrollment, and future-plan demand.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" id="benefits">
+        <div class="container">
+          <h2 class="section-title">Benefits</h2>
+          <p class="section-intro narrow">
+            CourseSync is built for decisions you actually make during the year—not just a static course list.
+          </p>
+          <div class="benefit-grid benefit-grid-four">
+            <article class="benefit">
+              <img class="benefit-img" src="assets/trend-course.svg" alt="" loading="lazy" />
+              <h3>Know what is popular</h3>
+              <p>Trending and Course Info highlight enrollment, ratings, comments, future demand, and community activity with real examples.</p>
+            </article>
+            <article class="benefit">
+              <img class="benefit-img" src="assets/trend-person.svg" alt="" loading="lazy" />
+              <h3>Stay in your community</h3>
+              <p>Each account belongs to one school community, so directory members and course options stay relevant to where you actually attend.</p>
+            </article>
+            <article class="benefit">
+              <img class="benefit-img" src="assets/trend-discussion.svg" alt="" loading="lazy" />
+              <h3>Plan with support</h3>
+              <p>Friends can react, comment, recommend courses, discuss classes, and help you compare what fits your goals.</p>
+            </article>
+            <article class="benefit">
+              <img class="benefit-img" src="assets/course-planning.svg" alt="" loading="lazy" />
+              <h3>See the full picture</h3>
+              <p>Grad requirements, future lists, and your current schedule live in one place so you do not miss credits or prerequisites.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight section-alt" id="goals">
+        <div class="container">
+          <h2 class="section-title">Goals</h2>
+          <p class="section-intro narrow">
+            CourseSync exists so students can plan with confidence, transparency, and help from people at the same school.
+          </p>
+          <div class="goals-grid">
+            <article class="goal-card">
+              <img class="goal-card-img" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=720&q=80" alt="Student planning coursework with a laptop and notebook" loading="lazy" />
+              <h3>Make planning visible</h3>
+              <p>
+                Turn scattered conversations into shared context: who is taking what, how hard a class feels, and which
+                teachers or periods classmates chose.
+              </p>
+            </article>
+            <article class="goal-card">
+              <img class="goal-card-img" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=720&q=80" alt="Student working privately on a laptop" loading="lazy" />
+              <h3>Protect student choice</h3>
+              <p>
+                You control privacy on schedules, bio, and future plans. The directory shows verified profiles without
+                forcing everything public.
+              </p>
+            </article>
+            <article class="goal-card">
+              <img class="goal-card-img" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=720&q=80" alt="Classroom desks and notebooks ready for class" loading="lazy" />
+              <h3>Support the whole path</h3>
+              <p>
+                From middle school exploration to high school graduation tracking, the same workspace grows with your
+                grade level and community.
+              </p>
+            </article>
+            <article class="goal-card">
+              <img class="goal-card-img" src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=720&q=80" alt="Open books used for course planning" loading="lazy" />
+              <h3>Reduce last-minute surprises</h3>
+              <p>
+                Notifications, trending signals, and enrollment views help you notice popular courses, deadlines, and
+                peer advice before registration windows close.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight schools-served overview-action-band" id="schools">
+        <div class="container">
+          <h2 class="section-title">Communities</h2>
+          <p class="section-intro narrow">CourseSync works best when students build a shared planning culture: accurate schedules, thoughtful privacy, useful class updates, and course context from people at the same school.</p>
+          <div class="launch-grid">
+            <article class="launch-card launch-card-emerald">
+              <span class="launch-kicker">High school planning</span>
+              <h3>Emerald High School</h3>
+              <p>
+                CourseSync supports 9-12 planning with current classes, course ratings, future course
+                recommendations, Catalog search, career pathway context, finals reminders, notifications, and shared class discovery.
+              </p>
+            </article>
+            <article class="launch-card launch-card-fallon">
+              <span class="launch-kicker">Middle school transition</span>
+              <h3>Fallon Middle School</h3>
+              <p>
+                Fallon students can organize regular and Wednesday bell schedules, sports and activities,
+                exploratory interests, friends, discussion posts, classmate profiles, and the transition into high school.
+              </p>
+            </article>
+            <article class="launch-card launch-card-inside">
+              <span class="launch-kicker">Student workspace</span>
+              <h3>Inside The Website</h3>
+              <p>
+                The dashboard now includes a planner snapshot, discussion board, invite system, profile
+                privacy controls, community directory, course comments, enrollment filters, dated alerts, and recommendation tools.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-panel">
+        <div class="footer-column">
+          <h3>Stay Connected</h3>
+          <p>Get planning reminders, course updates, and community tips for the next registration cycle.</p>
+          <form class="footer-signup" aria-label="Footer email signup">
+            <input type="email" placeholder="Email Address" />
+            <button type="button">Sign Up</button>
+          </form>
+          <div class="footer-socials" aria-label="CourseSync social links">
+            <span>f</span><span>x</span><span>in</span>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Built For Students</h3>
+          <p>CourseSync keeps planning, classes, graduation progress, and community context in one student-controlled workspace for Emerald and Fallon.</p>
+          <a href="#features">Explore Features ›</a>
+        </div>
+        <div class="footer-column footer-nav-column">
+          <h3>Navigate</h3>
+          <div class="footer-link-grid">
+            <a href="#top">Home ›</a>
+            <a href="#how">How It Works ›</a>
+            <a href="#features">Features ›</a>
+            <a href="#benefits">Benefits ›</a>
+            <a href="#goals">Goals ›</a>
+            <a href="#schools">Launch ›</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>CourseSync · Emerald High School & Fallon Middle School</span>
+          <span>Privacy-first planning · Community course context · Student-owned schedules</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sign up modal -->
+    <div class="modal-overlay" id="signup-modal" hidden role="dialog" aria-modal="true" aria-labelledby="signup-title">
+      <div class="modal">
+        <button type="button" class="modal-close" data-close-modal aria-label="Close sign up">×</button>
+        <h2 id="signup-title" class="modal-title">Sign up</h2>
+        <p class="modal-sub">Step <span id="signup-step-indicator">1</span> of 3</p>
+
+        <form id="signup-form" novalidate>
+          <div class="form-step" data-signup-step="1">
+            <label class="field">
+              <span>Email</span>
+              <input type="text" name="email" autocomplete="email" required placeholder="you@student.org" />
+            </label>
+            <label class="field">
+              <span>Password</span>
+              <span class="password-field-wrap"><input type="password" name="password" autocomplete="new-password" required minlength="8" placeholder="At least 8 characters" /><button type="button" class="password-toggle" data-password-toggle>Show</button></span>
+            </label>
+          </div>
+
+          <div class="form-step" data-signup-step="2" hidden>
+            <label class="field">
+              <span>Full name</span>
+              <input type="text" name="name" autocomplete="name" required placeholder="Alex Rivera" />
+            </label>
+            <label class="field">
+              <span>School</span>
+              <select name="school" id="signup-school" required>
+                <option value="">Select your school</option>
+                <option value="Emerald High School">Emerald High School</option>
+                <option value="Fallon Middle School">Fallon Middle School</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Mobile phone</span>
+              <input type="tel" name="phone" autocomplete="tel" required placeholder="(925) 555-0100" />
+            </label>
+            <fieldset class="field checkbox-field">
+              <legend>Discovery</legend>
+              <label class="checkbox">
+                <input type="checkbox" name="nearby" />
+                <span>Allow friends nearby to find me by approved email or invite code only</span>
+              </label>
+            </fieldset>
+          </div>
+
+          <div class="form-step" data-signup-step="3" hidden>
+            <p class="success-copy">
+              Review your details. Finish to open your dashboard.
+            </p>
+            <dl class="review" id="signup-review"></dl>
+          </div>
+
+          <p class="form-error" id="signup-error" role="alert" hidden></p>
+
+          <div class="modal-actions">
+            <button type="button" class="btn btn-ghost" id="signup-back" hidden>Back</button>
+            <button type="button" class="btn btn-primary" id="signup-next">Continue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Log in modal -->
+    <div class="modal-overlay" id="login-modal" hidden role="dialog" aria-modal="true" aria-labelledby="login-title">
+      <div class="modal">
+        <button type="button" class="modal-close" data-close-modal aria-label="Close log in">×</button>
+        <h2 id="login-title" class="modal-title">Log in</h2>
+        <p class="modal-sub">Step <span id="login-step-indicator">1</span> of 2</p>
+
+        <form id="login-form" novalidate>
+          <div class="form-step" data-login-step="1">
+            <label class="field">
+              <span>Email</span>
+              <input type="text" name="email" autocomplete="username" required placeholder="you@student.org" />
+            </label>
+            <label class="field">
+              <span>Password</span>
+              <span class="password-field-wrap"><input type="password" name="password" autocomplete="current-password" required placeholder="Your password" /><button type="button" class="password-toggle" data-password-toggle>Show</button></span>
+            </label>
+            <p class="hint">Use your account email and a password with 8+ characters.</p>
+            <button type="button" class="btn btn-ghost btn-sm" id="forgot-password-btn">Forgot password?</button>
+          </div>
+
+          <div class="form-step" data-login-step="2" hidden>
+            <p class="success-copy">
+              Verification protects your schedule, messages, and school directory profile. Request a fresh 6-digit code, then enter it here before opening the dashboard.
+            </p>
+            <label class="field">
+              <span>6-digit code</span>
+              <input type="text" name="code" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="000000" aria-describedby="code-hint" />
+            </label>
+            <p id="code-hint" class="hint">Use the newest code requested for this account on this browser.</p>
+            <button type="button" class="btn btn-outline btn-sm verification-request-btn" id="request-login-code">Request Code</button>
+          </div>
+
+          <p class="form-error" id="login-error" role="alert" hidden></p>
+
+          <div class="modal-actions">
+            <button type="button" class="btn btn-ghost" id="login-back" hidden>Back</button>
+            <button type="button" class="btn btn-primary" id="login-next">Continue</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="shared-sync.js?v=course-sync-current"></script>
+    <script src="app.js?v=course-sync-current"></script>
+  </body>
+</html>
